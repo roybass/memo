@@ -2,7 +2,7 @@ const es = require('elasticsearch');
 const logger = require('../server/logger').create('es-client');
 
 var client = new es.Client({
-  host: 'http://104.197.160.126/elasticsearch/',
+  host: 'localhost:9200',
   log: 'trace'
 });
 
