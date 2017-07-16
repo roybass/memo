@@ -1,2 +1,2 @@
 # memo
-memo
+Organize your memory
