@@ -10,4 +10,11 @@ router.get('/add', (req, res) => {
 		})
 });
 
+router.get('/search', (req, res) => {
+	client.search(req.query.userId, req.query.text)
+	  .then((result) => {
+	  	res.json(result);
+	  })
+});
+
 module.exports = router;

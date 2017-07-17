@@ -20,6 +20,13 @@ class Client {
 		  }
 		});
 	}
+
+	search(userId, text) {
+		return client.search({
+			index: 'userdata',
+			q: 'text:' + text
+		});
+	}
 }
 
 module.exports = new Client();
