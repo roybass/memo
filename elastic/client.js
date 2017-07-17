@@ -9,7 +9,7 @@ var client = new es.Client({
 class Client {
 
 	insert(userId, text, metadata) {
-		logger.info("Indexing userId=" userId + ", text=" + text);
+		logger.info("Indexing userId=" + userId + ", text=" + text);
 		return client.index({
 		  index: 'userdata',
 		  type: 'mem',
@@ -23,7 +23,7 @@ class Client {
 	}
 
 	search(userId, text) {
-		logger.info("Searching userId=" userId + ", text=" + text);
+		logger.info("Searching userId=" + userId + ", text=" + text);
 		return client.search({
 			index: 'userdata',
 			q: text,
