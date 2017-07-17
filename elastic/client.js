@@ -24,7 +24,8 @@ class Client {
 	search(userId, text) {
 		return client.search({
 			index: 'userdata',
-			q: 'text:' + text
+			q: 'title:' + text,
+
 		});
 	}
 }
