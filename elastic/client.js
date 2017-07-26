@@ -29,8 +29,10 @@ class Client {
 			body: {
 				bool : {
 					must: [
-						match : {
-							title : text
+						{
+							match : {
+								title : text
+							}
 						}
 					],
 					filter : [
