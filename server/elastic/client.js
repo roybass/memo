@@ -1,5 +1,5 @@
 const es = require('elasticsearch');
-const logger = require('../server/logger').create('es-client');
+const logger = require('../logger').create('es-client');
 
 var client = new es.Client({
 	host: 'localhost:9200',
